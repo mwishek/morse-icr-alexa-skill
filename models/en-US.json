@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "united states quiz game",
+      "invocationName": "morse learning game",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -35,43 +35,27 @@
               "type": "AMAZON.US_STATE"
             },
             {
-              "name": "capital",
-              "type": "AMAZON.US_CITY"
-            },
-            {
-              "name": "statehood_year",
-              "type": "AMAZON.FOUR_DIGIT_NUMBER"
-            },
-            {
               "name": "abbreviation",
               "type": "US_STATE_ABBR"
             },
             {
-              "name": "statehood_order",
-              "type": "AMAZON.NUMBER"
+              "name": "character",
+              "type": "MORSE.character"
+            },
+            {
+              "name": "callsign",
+              "type": "CALLSIGN"
+            },
+            {
+              "name": "q-code",
+              "type": "Q-CODE"
             }
           ],
           "samples": [
             "{state}",
-            "{capital}",
-            "{statehood_year}",
-            "{statehood_order}",
-            "{abbreviation}",
-            "tell me about {state}",
-            "tell me about {capital}",
-            "tell me about {statehood_year}",
-            "tell me about {statehood_order}",
-            "tell me about {abbreviation}",
-            "what do you know about {state}",
-            "what do you know about {capital}",
-            "what do you know about {statehood_year}",
-            "what do you know about {statehood_order}",
-            "what do you know about {abbreviation}",
-            "{state} information",
-            "{capital} information",
-            "{statehood_year} information",
-            "{statehood_order} information",
-            "{abbreviation} information"
+            "{callsign}",
+            "{character}",
+            "{abbreviation}"
           ]
         },
         {
@@ -389,6 +373,180 @@
             }
           ],
           "name": "US_STATE_ABBR"
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "A"
+              }
+            },
+            {
+              "name": {
+                "value": "B"
+              }
+            },
+            {
+              "name": {
+                "value": "C"
+              }
+            },
+            {
+              "name": {
+                "value": "D"
+              }
+            },
+            {
+              "name": {
+                "value": "E"
+              }
+            },
+            {
+              "name": {
+                "value": "F"
+              }
+            },
+            {
+              "name": {
+                "value": "G"
+              }
+            },
+            {
+              "name": {
+                "value": "H"
+              }
+            },
+            {
+              "name": {
+                "value": "I"
+              }
+            },
+            {
+              "name": {
+                "value": "J"
+              }
+            },
+            {
+              "name": {
+                "value": "K"
+              }
+            },
+            {
+              "name": {
+                "value": "L"
+              }
+            },
+            {
+              "name": {
+                "value": "M"
+              }
+            },
+            {
+              "name": {
+                "value": "N"
+              }
+            },
+            {
+              "name": {
+                "value": "O"
+              }
+            },
+            {
+              "name": {
+                "value": "P"
+              }
+            },
+            {
+              "name": {
+                "value": "Q"
+              }
+            },
+            {
+              "name": {
+                "value": "R"
+              }
+            },
+            {
+              "name": {
+                "value": "S"
+              }
+            },
+            {
+              "name": {
+                "value": "T"
+              }
+            },
+            {
+              "name": {
+                "value": "U"
+              }
+            },
+            {
+              "name": {
+                "value": "V"
+              }
+            },
+            {
+              "name": {
+                "value": "W"
+              }
+            },
+            {
+              "name": {
+                "value": "X"
+              }
+            },
+            {
+              "name": {
+                "value": "Y"
+              }
+            },
+            {
+              "name": {
+                "value": "Z"
+              }
+            },
+            {
+              "name": {
+                "value": "/"
+              }
+            },
+            {
+              "name": {
+                "value": "="
+              }
+            },
+            {
+              "name": {
+                "value": "SK"
+              }
+            },
+            {
+              "name": {
+                "value": "BK"
+              }
+            },
+            {
+              "name": {
+                "value": "AR"
+              }
+            }
+          ],
+          "name": "MORSE.character"
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "QSL"
+              }
+            }
+          ],
+          "name": "Q-CODES"
         }
       ]
     }
